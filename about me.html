@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <link rel="icon" href="icon.png" type="image/png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anas Ahmed | عني</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap">
+    <style>
+        body {
+            font-family: 'Cairo', sans-serif; /* تحديد خط Cairo */
+            background-color: #111; /* تحديد اللون الداكن للخلفية */
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #222; /* تحديد لون الخلفية الداكن للشريط العلوي */
+            color: white;
+            padding: 10px 0;
+            overflow: hidden;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* إضافة ظل للشريط العلوي */
+        }
+
+        .navbar {
+            overflow: hidden;
+        }
+
+        .navbar a {
+            float: right;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+            font-size: 17px;
+            font-weight: 700; /* تحديد سمك الخط */
+        }
+
+        .navbar a:hover {
+            background-color: #444; /* تحديد لون الخلفية عند التحويم بالماوس */
+        }
+
+        .active {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        .about {
+            background-color: #4CAF50; /* تحديد لون خلفية "عني" */
+        }
+        
+        .home {
+            background-color: transparent; /* إزالة الخلفية لـ "الرئيسية" */
+        }
+        
+        .main-content {
+            padding: 20px;
+            color: white;
+        }
+        
+        .main-content p {
+            text-align: left;
+        }
+        
+        .main-content img {
+            float: right;
+            margin-left: 20px;
+            max-width: 300px;
+        }
+        .main-content {
+            padding: 20px;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .main-content img {
+            max-width: 100%; /* لضمان تناسب الصورة مع جميع الأحجام */
+        }
+
+        @media screen and (min-width: 600px) {
+            .main-content {
+                flex-direction: row; /* تنظيم العناصر أفقياً في حالة عرض الكمبيوتر */
+                justify-content: center; /* توسيط العناصر الأفقية */
+                align-items: flex-start; /* إعادة المحاذاة إلى الأعلى للنص */
+                text-align: left; /* محاذاة النص إلى اليسار */
+            }
+
+            .main-content img {
+                margin-right: 20px; /* تباعد بين الصورة والنص على الكمبيوتر */
+            }
+        }
+
+        .main-content h2 {
+            font-size: 24px; /* حجم الخط للجوال */
+        }
+
+        @media screen and (min-width: 600px) {
+            .main-content h5 {
+                font-size: 32px; /* حجم الخط للكمبيوتر */
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <a href="index.html" class="active home">الرئيسية</a>
+            <a href="about me.html" class="about">عني</a>
+            <a href="projects.html" class="home">مشاريعي</a>
+        </div>
+    </header>
+    <main>
+        <div class="centered-text">
+            <div class="icon-container">
+                <a href="https://www.youtube.com" target="_blank">
+                    <img src="youtube_resized.png" alt="YouTube Icon" class="icon">
+                </a>
+                <a href="https://www.discord.com" target="_blank">
+                    <img src="discord_resized.png" alt="Discord Icon" class="icon">
+                </a>
+                <a href="https://www.tiktok.com" target="_blank">
+                    <img src="tiktok.png" alt="TikTok Icon" class="icon">
+                </a>
+            </div>
+        </div>
+        <div class="main-content">
+            <img src="A.png" alt="صورة">
+            <h1>السلام عليكم و رحمة الله و بركاته:<br>
+                اسمي أنس احمد من مصر عمري 14 عام<br>
+                احب البرمجة و خاصتا برمجة المواقع و التطبيقات<br>
+                و اتمني ان تعبجكم مشاريعي الحالية<br>
+                و شكرا لكم
+            </h1>
+        </div>
+    </main>
+    <script src="scripts.js"></script>
+</body>
+</html>

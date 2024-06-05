@@ -1,0 +1,122 @@
+body {
+  font-family: 'Cairo', sans-serif; /* تحديد خط Cairo */
+  margin: 0;
+  padding: 0;
+  background-color: #111; /* تحديد اللون الداكن للخلفية */
+}
+
+header {
+  background-color: #222; /* تحديد لون الخلفية الداكن للشريط العلوي */
+  color: white;
+  padding: 10px 0;
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* إضافة ظل للشريط العلوي */
+}
+
+.navbar {
+  overflow: hidden;
+}
+
+.navbar a {
+  float: right;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  background-color: #444; /* تحديد لون الخلفية عند التحويم بالماوس */
+}
+
+.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.centered-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+}
+
+h3 {color: #006400}
+h2 {color: #90EE90}
+
+.icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.icon-container a {
+  margin: 0 5px; /* تقليل التباعد بين الأيقونات */
+}
+
+.icon {
+  width: 50px;
+  height: 50px;
+  transition: transform 0.3s ease;
+}
+
+.icon:hover {
+  transform: scale(1.2); /* تكبير الأيقونة عند التحويم */
+}
+/* أنميشن التحويم */
+.icon:hover {
+  transform: scale(1.2); /* تكبير الأيقونة عند التحويم */
+}
+
+/* تنسيقات CSS للأجهزة المحمولة */
+@media only screen and (max-width: 600px) {
+  /* تقليل حجم الخطوط */
+  body {
+    font-size: 14px;
+  }
+
+  /* تقليل حجم العنوان الرئيسي */
+  h1 {
+    font-size: 24px;
+  }
+
+  /* تقليل حجم العناوين الفرعية */
+  h2 {
+    font-size: 18px;
+  }
+
+  /* تقليل حجم النص العادي */
+  p {
+    font-size: 14px;
+  }
+
+  /* تقليل حجم الروابط */
+  .navbar a {
+    font-size: 14px;
+  }
+
+  /* تصغير حجم الأيقونات */
+  .icon {
+    width: 40px;
+    height: 40px;
+  }
+}
+.centered-text h4 {
+  white-space: nowrap; /* السماح فقط بسطر واحد للنص */
+  text-align: center; /* توسيط النص */
+}
+
+@media screen and (max-width: 600px) {
+  .centered-text h2 {
+      white-space: normal; /* السماح بعدة أسطر للنص في الجوال */
+  }
+}
